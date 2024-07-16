@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Dashboardlayout } from "../components";
 import Dashboard from "../Pages/Dashboard";
-import Employees from "../Pages/Employees";
+import Employees from "../Pages/EmployeeDashboard/Employees";
 import Payroll from "../Pages/Payroll";
 import Today_Attendance from "../Pages/Today_Attendance";
 import Absent_Attendance from "../Pages/Absent_Attendance";
@@ -16,66 +16,66 @@ import Rate_Goal from "../Pages/Rate_Goal";
 import Review from "../Pages/Review";
 
 export const Element = createBrowserRouter([
-    {
-        path: "/",
-        element: <Dashboardlayout />,
-        children: [
-            {
-                index: true,
-                element: <Dashboard />
-            },
-            {
-                path: "/employees",
-                element: <Employees />
-            },
-            {
-                path: "/payroll",
-                element: <Payroll />
-            },
-            {
-                path: "/today's-attendance",
-                element: <Today_Attendance />
-            },
-            {
-                path: "/absent-attendance",
-                element: <Absent_Attendance />
-            },
-            {
-                path: "/late-attendance",
-                element: <Late_Attendance />
-            },
-            {
-                path: "/history",
-                element: <History />
-            },
-            {
-                path: "/leave-category",
-                element: <Leave_Category />
-            },
-            {
-                path: "/rejected-leave",
-                element: <Rejected_Leave />
-            },
-            {
-                path: "/approved-leave",
-                element: <Approved_Leave />
-            },
-            {
-                path: "/pending-leave",
-                element: <Pending_Leave />
-            },
-            {
-                path: "/details",
-                element: <Details />
-            },
-            {
-                path: "/rate-goal",
-                element: <Rate_Goal />
-            },
-            {
-                path: "/review",
-                element: <Review />
-            }
-        ]
-    }
-])
+  {
+    path: "/",
+    element: <Dashboardlayout />,
+    children: [
+      {
+        index: true,
+        element: <Dashboard />,
+      },
+      {
+        path: "/employees",
+        element: <Employees />,
+      },
+      {
+        path: "/payroll",
+        element: <Payroll />,
+      },
+      {
+        path: "/today's-attendance",
+        element: <Today_Attendance />,
+      },
+      {
+        path: "/absent-attendance",
+        element: <Absent_Attendance />,
+      },
+      {
+        path: "/late-attendance",
+        element: <Late_Attendance />,
+      },
+      {
+        path: "/history",
+        element: <History />,
+      },
+      {
+        path: "/leave-category",
+        element: <Leave_Category />,
+      },
+      {
+        path: "/rejected-leave",
+        element: <Rejected_Leave />,
+      },
+      {
+        path: "/approved-leave",
+        element: <Approved_Leave />,
+      },
+      {
+        path: "/pending-leave",
+        element: <Pending_Leave />,
+      },
+      {
+        path: "/details",
+        element: <Details />,
+      },
+      {
+        path: "/rate-goal",
+        element: <Rate_Goal />,
+      },
+      {
+        path: "/review",
+        element: <Review />,
+      },
+    ],
+  },
+]);
